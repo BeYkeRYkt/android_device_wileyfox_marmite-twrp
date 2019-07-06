@@ -10,7 +10,7 @@
 /misc           emmc    /dev/block/bootdevice/by-name/misc
 /recovery       emmc    /dev/block/bootdevice/by-name/recovery      flags=backup=1
 
-/vendor	        ext4    /dev/block/bootdevice/by-name/oem           flags=display="Vendor";backup=1;wipeingui
+/vendor	        squashfs /dev/block/bootdevice/by-name/oem           flags=display="Vendor";backup=1;wipeingui
 /vendor_image   emmc    /dev/block/bootdevice/by-name/oem           flags=display="Vendor Image";backup=1;flashimg=1
 
 /firmware       vfat    /dev/block/bootdevice/by-name/modem	        flags=mounttodecrypt;fsflags=ro;display="Firmware"
